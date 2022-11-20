@@ -1,0 +1,5 @@
+y = -2.08 + 0.578x1 + 0.268x2 - 0.015x3 - 0.075x4
+x1 = ET (evapotranspiración)
+X2 = TMP_PROM
+X3 = T_MIN
+X4 = T_MAX

@@ -1,0 +1,7 @@
+main {
+  height: calc(100vh - 60px);
+}
+
+main > .container {
+  padding: 60px 15px 0;
+}
