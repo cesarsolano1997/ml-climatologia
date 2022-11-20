@@ -1,0 +1,1 @@
+#### Proyecto de ml para la detección de plagas en cultivo palto
