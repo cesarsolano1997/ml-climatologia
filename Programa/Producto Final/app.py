@@ -20,6 +20,7 @@ def Predecir():
         to_predict_list = list(to_predict_list.values())
         print(to_predict_list)
         to_predict_list = list(map(float, to_predict_list))
+        to_predict_list.append(0)
         print(to_predict_list)
         result = ValuePredictor("3", to_predict_list)
         prediction = str(result)
@@ -30,9 +31,11 @@ def Predecir():
 def ValuePredictor(plaga, to_predict_list):
 
     nameModel = ""
-    if plaga == "1":
-        nameModel = "./models_prediction/dagbertus.pkl"
-    elif plaga == "2":
+    # if plaga == "1":
+    #     nameModel = "./models_prediction/dagbertus.pkl"
+    # elif
+    
+    if plaga == "2":
         nameModel = "./models_prediction/olygonichus_adultos.pkl"
     elif plaga == "3":
         nameModel = "./models_prediction/olygonichus_huevos.pkl"
@@ -42,6 +45,7 @@ def ValuePredictor(plaga, to_predict_list):
         nameModel = "./models_prediction/trips_tabaci.pkl"
 
     loaded_model = pickle.load(open(nameModel, "rb"))
+    print(loaded_model.params)
     result = loaded_model.predict(to_predict_list)
     return result[0]
 

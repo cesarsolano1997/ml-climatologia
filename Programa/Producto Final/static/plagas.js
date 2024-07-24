@@ -48,7 +48,7 @@ document.querySelector("#plagas").addEventListener("change", function (ev) {
   } else if (plaga === "2") {
     html = `
     <div class="mb-3">
-      <label for="tmpMin" class="form-label">
+      <label for="TMP_PROM" class="form-label">
         Temperatura promedio (C°)
       </label>
       <input
@@ -59,6 +59,18 @@ document.querySelector("#plagas").addEventListener("change", function (ev) {
         name="TMP_PROM"
       />
     </div>  
+      <div class="mb-3">
+      <label for="HM_PROM" class="form-label">
+        Humedad promedio (C°)
+      </label>
+      <input
+        type="number"
+        step="0.01"
+        class="form-control"
+        id="HM_PROM"
+        name="HM_PROM"
+      />
+    </div>
     `;
   } else if (plaga === "3") {
     html = `
@@ -100,7 +112,20 @@ document.querySelector("#plagas").addEventListener("change", function (ev) {
         id="HM_PROM"
         name="HM_PROM"
       />     
-    </div> `;
+    </div> 
+    <div class="mb-3">
+      <label for="TMP_PROM" class="form-label">
+        Temperatura promedio (C°)
+      </label>
+      <input
+        type="number"
+        step="0.01"
+        class="form-control"
+        id="TMP_PROM"
+        name="TMP_PROM"
+      />     
+    </div> 
+    `;
   } else if (plaga === "5") {
     html = `
       <div class="mb-3">
