@@ -1,6 +1,5 @@
 from flask import Flask, request, jsonify
 from flask.templating import render_template
-from matplotlib.backends.backend_agg import FigureCanvasAgg as FigureCanvas
 import pickle
 import numpy as np
 

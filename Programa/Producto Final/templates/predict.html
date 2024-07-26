@@ -70,6 +70,13 @@
           <section class="col-md-4 card">
             <div class="card-body">
               <h5>Clima actual</h5>
+              <div id="datos-clima">
+                <p>Descripción: <span id="ciudad">--</span></p>
+                <p>Temperatura: <span id="temperatura">--</span>°C</p>
+                <p>Humedad: <span id="humedad">--</span>%</p>
+                <p>Velocidad del viento: <span id="viento">--</span> km/h</p>
+              </div>
+            </div>
             </div>
           </section>
         </div>
@@ -85,5 +92,7 @@
       src="{{url_for('static', filename='plagas.js')}}"
       type="text/javascript"
     ></script>
+
+  <script src="{{url_for('static', filename='clima.js')}}" type="text/javascript"></script>
   </body>
 </html>
