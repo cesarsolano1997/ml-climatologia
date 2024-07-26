@@ -1,0 +1,11 @@
+{
+  "builds": [
+      { "src": "*.py", "use": "@vercel/python", "config": {
+        "maxLambdaSize": "15mb", "runtime": "python3.9.13"
+      } }
+    ],
+    "redirects": [
+      { "source": "/", "destination": "/app.py" }
+    ]  
+  
+  }
